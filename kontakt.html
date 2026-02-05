@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt a rezervácia - Zruby Oščadnica. Zavolajte nám, napíšte email alebo použite náš rezervačný formulár. Tešíme sa na vás!">
+  <meta name="keywords" content="kontakt zruby oščadnica, rezervácia chaty beskydy, ubytovanie kysuce kontakt">
+  
+  <title>Kontakt a Rezervácia | Zruby Oščadnica</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">Zruby Oščadnica</a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="index.html#ponuka">Chaty</a></li>
+        <li><a href="spolocenska-miestnost.html">Spoločenská miestnosť</a></li>
+        <li><a href="cennik.html">Cenník</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Domov</a></li>
+        <li>Kontakt</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section style="margin-top: 100px; padding: 3rem 0;">
+    <div class="container">
+      <h1 class="section-title fade-in">Kontakt a Rezervácia</h1>
+      <p class="section-subtitle fade-in">Tešíme sa na vašu návštevu!</p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info fade-in">
+          <h2>Kontaktné informácie</h2>
+          
+          <h3>📍 Adresa</h3>
+          <p>
+            Zruby Oščadnica<br>
+            Oščadnica 123<br>
+            023 04 Oščadnica<br>
+            Žilinský kraj, Slovensko
+          </p>
+
+          <h3>📞 Telefón</h3>
+          <p>
+            <a href="tel:+421XXXXXXXXX" style="color: var(--primary-color); font-weight: 600;">+421 XXX XXX XXX</a><br>
+            <small>Volajte kedykoľvek, sme k dispozícii 24/7</small>
+          </p>
+
+          <h3>✉️ Email</h3>
+          <p>
+            <a href="mailto:info@zrubyoscadnica.sk" style="color: var(--primary-color); font-weight: 600;">info@zrubyoscadnica.sk</a><br>
+            <small>Odpovieme do 24 hodín</small>
+          </p>
+
+          <h3>🕒 Dostupnosť</h3>
+          <p>
+            <strong>Kontakt:</strong> Nonstop<br>
+            <strong>Check-in:</strong> 14:00<br>
+            <strong>Check-out:</strong> 10:00
+          </p>
+
+          <h3>🌐 Sociálne siete</h3>
+          <div class="social-links">
+            <a href="#facebook" aria-label="Facebook" title="Facebook">📘</a>
+            <a href="#instagram" aria-label="Instagram" title="Instagram">📷</a>
+          </div>
+
+          <h3>💳 Platobné možnosti</h3>
+          <p>
+            • Hotovosť<br>
+            • Bankový prevod<br>
+            • Platobná karta (pri príchode)
+          </p>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="fade-in">
+          <h2>Rezervačný formulár</h2>
+          <p style="margin-bottom: 1.5rem; color: #666;">
+            Vyplňte formulár a my sa vám ozveme čo najskôr pre potvrdenie rezervácie.
+          </p>
+
+          <div class="success-message"></div>
+
+          <form id="reservation-form">
+            <div class="form-group">
+              <label for="name">Meno a priezvisko *</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefón *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+421 XXX XXX XXX" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="accommodation">Vyberte ubytovanie *</label>
+              <select id="accommodation" name="accommodation" required>
+                <option value="">-- Vyberte --</option>
+                <option value="chata1">Chata 1 - Rodinný útulok (4-6 osôb)</option>
+                <option value="chata2">Chata 2 - Romantické ubytovanie (2-4 osoby)</option>
+                <option value="spolocenska">Spoločenská miestnosť (20-30 osôb)</option>
+              </select>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="checkin">Dátum príchodu *</label>
+              <input type="date" id="checkin" name="checkin" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout">Dátum odchodu *</label>
+              <input type="date" id="checkout" name="checkout" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="persons">Počet osôb *</label>
+              <input type="number" id="persons" name="persons" min="1" max="30" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Správa / Špeciálne požiadavky</label>
+              <textarea id="message" name="message" rows="5" placeholder="Napríklad: potrebujem drevo na kúrenie, mám alergiu na..."></textarea>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem;">
+                Odoslať rezerváciu
+              </button>
+            </div>
+
+            <p style="font-size: 0.875rem; color: #666; text-align: center;">
+              * Povinné polia<br>
+              Po odoslaní formulára vás budeme kontaktovať do 24 hodín.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section" style="padding: 0;">
+    <div class="container">
+      <h2 class="section-title fade-in" style="padding-top: 2rem;">Kde nás nájdete</h2>
+      <p class="section-subtitle fade-in">Oščadnica, Žilinský kraj, Slovensko</p>
+      
+      <div class="map-container fade-in">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.4747894847287!2d18.7833!3d49.6667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDQwJzAwLjEiTiAxOMKwNDYnNTkuOSJF!5e0!3m2!1ssk!2ssk!4v1234567890"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Zruby Oščadnica">
+        </iframe>
+      </div>
+
+      <div style="text-align: center; margin-top: 1.5rem; padding-bottom: 3rem;">
+        <a href="https://www.google.com/maps/search/?api=1&query=49.6667,18.7833" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-secondary">
+          Otvoriť v Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Directions Section -->
+  <section style="background: var(--bg-light); padding: 3rem 0;">
+    <div class="container">
+      <h2 class="section-title fade-in">Ako sa k nám dostať</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        <div class="fade-in" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem;">🚗 Autom</h3>
+          <p style="color: #666;">
+            <strong>Z Žiliny:</strong> cca 45 km, 50 minút<br>
+            Smerom na Čadcu, odbočka Oščadnica<br><br>
+            <strong>Z Čadce:</strong> cca 15 km, 20 minút<br>
+            Po hlavnej ceste smerom na Žilinu
+          </p>
+        </div>
+
+        <div class="fade-in" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem;">🚌 Autobusom</h3>
+          <p style="color: #666;">
+            Pravidelné autobusové spojenie z Žiliny a Čadce.<br>
+            Zastávka: Oščadnica, stred<br>
+            Od zastávky 5 minút pešo alebo vás radi vyzdvihneme.
+          </p>
+        </div>
+
+        <div class="fade-in" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem;">🚂 Vlakom</h3>
+          <p style="color: #666;">
+            Najbližšia stanica: Čadca<br>
+            Odtiaľ autobusom alebo taxíkom.<br>
+            Radi vám pomôžeme s organizáciou prepravy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section style="padding: 3rem 0;">
+    <div class="container">
+      <h2 class="section-title fade-in">Časté otázky</h2>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="fade-in" style="background: var(--bg-light); padding: 1.5rem; margin-bottom: 1rem; border-radius: 10px;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Kedy môžem vykonať check-in?</h3>
+          <p style="color: #666; margin: 0;">Check-in je možný od 14:00. Ak potrebujete skorší príchod, kontaktujte nás vopred.</p>
+        </div>
+
+        <div class="fade-in" style="background: var(--bg-light); padding: 1.5rem; margin-bottom: 1rem; border-radius: 10px;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Je potrebná záloha?</h3>
+          <p style="color: #666; margin: 0;">Áno, pri rezervácii je potrebná záloha 30% z celkovej ceny (50% pre spoločenskú miestnosť).</p>
+        </div>
+
+        <div class="fade-in" style="background: var(--bg-light); padding: 1.5rem; margin-bottom: 1rem; border-radius: 10px;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Môžem so sebou priviesť domáce zviera?</h3>
+          <p style="color: #666; margin: 0;">Áno, po predchádzajúcej dohode. Poplatok za zviera je 10 € za pobyt.</p>
+        </div>
+
+        <div class="fade-in" style="background: var(--bg-light); padding: 1.5rem; margin-bottom: 1rem; border-radius: 10px;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Je k dispozícii WiFi?</h3>
+          <p style="color: #666; margin: 0;">Áno, všetky objekty majú bezplatné WiFi pripojenie.</p>
+        </div>
+
+        <div class="fade-in" style="background: var(--bg-light); padding: 1.5rem; margin-bottom: 1rem; border-radius: 10px;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Čo je zahrnuté v cene?</h3>
+          <p style="color: #666; margin: 0;">Elektrina, voda, kúrenie, WiFi, parkovanie a základné vybavenie. Nie je zahrnuté: upratovanie, drevo na kúrenie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Zruby Oščadnica</h3>
+          <p>Váš kúsok pokoja v srdci Beskýd</p>
+          <div class="social-links">
+            <a href="#facebook" aria-label="Facebook">📘</a>
+            <a href="#instagram" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>📍 Oščadnica 123, 023 04 Oščadnica</li>
+            <li>📞 +421 XXX XXX XXX</li>
+            <li>✉️ info@zrubyoscadnica.sk</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Rýchle odkazy</h3>
+          <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="chata1.html">Chata 1</a></li>
+            <li><a href="chata2.html">Chata 2</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="galeria.html">Galéria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Otváracie hodiny</h3>
+          <p>Kontakt: Nonstop</p>
+          <p>Check-in: 14:00</p>
+          <p>Check-out: 10:00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zruby Oščadnica. Všetky práva vyhradené.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+
+</body>
+</html>
