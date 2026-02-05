@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fotogaléria Zruby Oščadnica - prezrite si fotky našich chát, spoločenskej miestnosti a krásneho okolia v Beskydách.">
+  <meta name="keywords" content="galéria zruby oščadnica, fotky chaty beskydy, oščadnica ubytovanie fotografie">
+  
+  <title>Galéria | Zruby Oščadnica</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">Zruby Oščadnica</a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="index.html#ponuka">Chaty</a></li>
+        <li><a href="spolocenska-miestnost.html">Spoločenská miestnosť</a></li>
+        <li><a href="cennik.html">Cenník</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Domov</a></li>
+        <li>Galéria</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section style="margin-top: 100px; padding: 3rem 0;">
+    <div class="container">
+      <h1 class="section-title fade-in">Fotogaléria</h1>
+      <p class="section-subtitle fade-in">Prezrite si fotky našich chát a krásneho okolia</p>
+
+      <!-- Gallery Filters -->
+      <div class="gallery-filters fade-in">
+        <button class="filter-btn active" data-filter="all">Všetky</button>
+        <button class="filter-btn" data-filter="chata1">Chata 1</button>
+        <button class="filter-btn" data-filter="chata2">Chata 2</button>
+        <button class="filter-btn" data-filter="spolocenska">Spoločenská miestnosť</button>
+        <button class="filter-btn" data-filter="okolie">Okolie a príroda</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Chata 1 Images -->
+        <div class="gallery-item fade-in" data-category="chata1">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+1+Exteriér" alt="Chata 1 - exteriér v zime">
+          <div class="gallery-item-overlay">
+            <p>Chata 1 - Exteriér</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata1">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+1+Obývačka" alt="Chata 1 - útulná obývačka s krbom">
+          <div class="gallery-item-overlay">
+            <p>Chata 1 - Obývačka s krbom</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata1">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+1+Kuchyňa" alt="Chata 1 - plně vybavená kuchyňa">
+          <div class="gallery-item-overlay">
+            <p>Chata 1 - Kuchyňa</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata1">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+1+Spálňa" alt="Chata 1 - hlavná spálňa">
+          <div class="gallery-item-overlay">
+            <p>Chata 1 - Hlavná spálňa</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata1">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+1+Terasa" alt="Chata 1 - terasa s výhľadom">
+          <div class="gallery-item-overlay">
+            <p>Chata 1 - Terasa</p>
+          </div>
+        </div>
+
+        <!-- Chata 2 Images -->
+        <div class="gallery-item fade-in" data-category="chata2">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+2+Exteriér" alt="Chata 2 - exteriér v lete">
+          <div class="gallery-item-overlay">
+            <p>Chata 2 - Exteriér</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata2">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+2+Obývačka" alt="Chata 2 - moderná obývačka">
+          <div class="gallery-item-overlay">
+            <p>Chata 2 - Obývačka</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata2">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+2+Spálňa" alt="Chata 2 - romantická spálňa">
+          <div class="gallery-item-overlay">
+            <p>Chata 2 - Spálňa</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata2">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+2+Kúpeľňa" alt="Chata 2 - moderná kúpeľňa">
+          <div class="gallery-item-overlay">
+            <p>Chata 2 - Kúpeľňa</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata2">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+2+Terasa" alt="Chata 2 - súkromná terasa">
+          <div class="gallery-item-overlay">
+            <p>Chata 2 - Terasa</p>
+          </div>
+        </div>
+
+        <!-- Spoločenská miestnosť Images -->
+        <div class="gallery-item fade-in" data-category="spolocenska">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Spoločenská+Hlavná+Hala" alt="Spoločenská miestnosť - hlavná hala">
+          <div class="gallery-item-overlay">
+            <p>Spoločenská miestnosť - Hlavná hala</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="spolocenska">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Spoločenská+Sedenie" alt="Spoločenská miestnosť - usporiadanie sedenia">
+          <div class="gallery-item-overlay">
+            <p>Spoločenská miestnosť - Sedenie</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="spolocenska">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Spoločenská+Tanec" alt="Spoločenská miestnosť - tanečný parkiet">
+          <div class="gallery-item-overlay">
+            <p>Spoločenská miestnosť - Tanečný parkiet</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="spolocenska">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Spoločenská+Kuchyňa" alt="Spoločenská miestnosť - kuchynka">
+          <div class="gallery-item-overlay">
+            <p>Spoločenská miestnosť - Kuchynka</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="spolocenska">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Spoločenská+Výzdoba" alt="Spoločenská miestnosť - príklad výzdoby">
+          <div class="gallery-item-overlay">
+            <p>Spoločenská miestnosť - Výzdoba</p>
+          </div>
+        </div>
+
+        <!-- Okolie a príroda Images -->
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Výhľad+na+Beskydy" alt="Nádherný výhľad na Beskydy">
+          <div class="gallery-item-overlay">
+            <p>Výhľad na Beskydy</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Príroda+v+Lete" alt="Okolie v lete">
+          <div class="gallery-item-overlay">
+            <p>Okolie v letnom období</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Zimná+Krajina" alt="Zimná krajina">
+          <div class="gallery-item-overlay">
+            <p>Zimná krajina</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Západ+Slnka" alt="Západ slnka nad horami">
+          <div class="gallery-item-overlay">
+            <p>Západ slnka</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Lesné+Chodníky" alt="Turistické chodníky v okolí">
+          <div class="gallery-item-overlay">
+            <p>Turistické chodníky</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Jesenné+Farby" alt="Jesenné farby prírody">
+          <div class="gallery-item-overlay">
+            <p>Jesenné farby</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Miestna+Fauna" alt="Miestna fauna">
+          <div class="gallery-item-overlay">
+            <p>Miestna fauna</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Potok+v+Lese" alt="Horský potok">
+          <div class="gallery-item-overlay">
+            <p>Horský potok</p>
+          </div>
+        </div>
+
+        <!-- More images for completeness -->
+        <div class="gallery-item fade-in" data-category="chata1">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+1+Krb" alt="Chata 1 - krb v obývačke">
+          <div class="gallery-item-overlay">
+            <p>Chata 1 - Útulný krb</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="chata2">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Chata+2+Detail" alt="Chata 2 - interiérový detail">
+          <div class="gallery-item-overlay">
+            <p>Chata 2 - Detail interiéru</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="spolocenska">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Spoločenská+Večer" alt="Spoločenská miestnosť večer">
+          <div class="gallery-item-overlay">
+            <p>Spoločenská miestnosť - Večerná atmosféra</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="okolie">
+          <img src="https://placehold.co/800x600/2d5016/white?text=Hviezdna+Obloha" alt="Hviezdna obloha">
+          <div class="gallery-item-overlay">
+            <p>Hviezdna obloha bez svetelného smogu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <span class="lightbox-prev lightbox-nav">&#10094;</span>
+      <img id="lightbox-img" src="" alt="">
+      <span class="lightbox-next lightbox-nav">&#10095;</span>
+      <div class="lightbox-counter"></div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section style="background: var(--bg-light); padding: 3rem 0; text-align: center;">
+    <div class="container">
+      <h2 class="fade-in">Páčia sa vám naše priestory?</h2>
+      <p class="fade-in" style="margin: 1rem 0 2rem;">Rezervujte si svoj termín ešte dnes!</p>
+      <a href="kontakt.html" class="btn btn-primary fade-in">Kontaktovať nás</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Zruby Oščadnica</h3>
+          <p>Váš kúsok pokoja v srdci Beskýd</p>
+          <div class="social-links">
+            <a href="#facebook" aria-label="Facebook">📘</a>
+            <a href="#instagram" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>📍 Oščadnica 123, 023 04 Oščadnica</li>
+            <li>📞 +421 XXX XXX XXX</li>
+            <li>✉️ info@zrubyoscadnica.sk</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Rýchle odkazy</h3>
+          <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="chata1.html">Chata 1</a></li>
+            <li><a href="chata2.html">Chata 2</a></li>
+            <li><a href="cennik.html">Cenník</a></li>
+            <li><a href="galeria.html">Galéria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Otváracie hodiny</h3>
+          <p>Kontakt: Nonstop</p>
+          <p>Check-in: 14:00</p>
+          <p>Check-out: 10:00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Zruby Oščadnica. Všetky práva vyhradené.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+
+</body>
+</html>
